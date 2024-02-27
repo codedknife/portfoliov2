@@ -53,7 +53,7 @@ export default function Home() {
         </CCollapse>
         </CNavbar>
       </CContainer>
-      <CContainer id="about" className="text-center" style={{padding: '1rem', marginBottom: '15rem', marginTop: '15rem'}}>
+      <CContainer id="about" className="text-center d-flex align-items-center" style={{padding: '1rem', height: '100vh'}}>
         <CRow xs={{ gutterY: 5 }}>
           <CCol sm={12} md={6}>
             <CImage fluid src="/profile_placeholder.png" style={{ border: '0.5rem solid rgb(253, 134, 110)', borderRadius: '50%' }} />
@@ -69,14 +69,14 @@ export default function Home() {
             <p>
             As a recent graduate entering the frontend web development industry, I'm enthusiastic about applying my fresh skills and knowledge to create engaging online experiences. With a solid foundation in coding and a passion for design, I'm eager to contribute to innovative projects and continue learning from experienced professionals.
             </p>
-            <CButton color="light" style={{margin: '0.5rem'}} href="https://linkedin.com/in/ash-tran">LinkedIn</CButton>
-            <CButton color="dark"  style={{margin: '0.5rem'}} href="https://github.com/codedknife">GitHub</CButton>
+            <CButton color="light" style={{margin: '0.5rem'}} href="https://linkedin.com/in/ash-tran" target='_blank'>LinkedIn</CButton>
+            <CButton color="dark"  style={{margin: '0.5rem'}} href="https://github.com/codedknife" target='_blank'>GitHub</CButton>
             </CContainer>
           </CCol>
         </CRow>
       </CContainer>
 
-      <CContainer id="experiences" style={{padding: '1rem', marginBottom: '15rem', scrollMarginTop: "70px"}}>
+      <CContainer id="experiences" style={{padding: '1rem', scrollMarginTop: "70px", height: '100vh'}}>
       <h2 style={{color: 'rgb(253, 134, 110)'}}>Experiences</h2>
       <CTable bordered small hover>
         <CTableHead color="dark">
@@ -222,7 +222,7 @@ export default function Home() {
       </CModalFooter>
     </CModal>
 
-    <CContainer id="projects" style={{padding: '1rem', marginBottom: '15rem', scrollMarginTop: '70px'}}>
+    <CContainer id="projects" style={{padding: '1rem', scrollMarginTop: '70px', height: '100vh'}}>
     <h2 style={{color: 'rgb(253, 134, 110)'}}>Projects</h2>
     <CNav variant="tabs" role="tablist">
       <CNavItem role="presentation">
@@ -304,7 +304,7 @@ export default function Home() {
               Results and compliance scores are easily accessed via the database. As a result, auditor time efficiency improved by 83%.
               </CCardText>
               <CContainer className="text-center">
-              <CButton color="dark" href="#">Learn more</CButton>
+              <CButton color="dark" href="http://www.capstone.cse.msu.edu/2024-01/projects/urban-science/" target='_blank'>Learn more</CButton>
               </CContainer>
               </CCol>
               </CRow>
@@ -314,7 +314,7 @@ export default function Home() {
         </CContainer>
       </CTabPane>
       <CTabPane role="tabpanel" aria-labelledby="software-tab-pane" visible={activeKey === 2}>
-       Software
+      Software
       </CTabPane>
       <CTabPane role="tabpanel" aria-labelledby="misc-tab-pane" visible={activeKey === 3}>
         Misc
